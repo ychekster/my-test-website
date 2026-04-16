@@ -9,156 +9,140 @@
 
     <meta property="og:title" content="yargazm.com — Разработка сайтов под ключ для бизнеса">
     <meta property="og:description" content="Создание современных сайтов под ключ: лендинги, корпоративные сайты и веб-приложения. Адаптивный дизайн, оптимизация скорости и ориентация на результат. Работаю с клиентами по всему миру.">
-    <meta property="og:image" content="images/yargazm-logo.png">
-
+    <meta property="og:image" content="https://yargazm.com/images/yargazm-logo.png">
     <meta property="og:url" content="https://yargazm.com">
 
     <link rel="canonical" href="https://yargazm.com/">
 
-    <!-- favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="images/yargazm-logo.png">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header class="header">
         <div class="header-container">
-            <a class="logo" href="#">YARGAZM</a>
+            <a class="logo" href="/">YARGAZM</a>
 
-            <nav class="nav" id="main-nav">
-                <a class="nav-link" href="#about">Обо мне</a>
+            <nav class="nav">
+                <a class="nav-link" href="#">Обо мне</a>
                 <a class="nav-link" href="#services">Услуги</a>
-                <a class="nav-link" href="#process">Работа</a>
-                <a class="nav-link" href="#contacts">Контакты</a>
+                <a class="nav-link" href="#">Работа</a>
+                <a class="nav-link" href="#">Контакты</a>
             </nav>
 
-            <a class="cta-button desktop-cta" href="https://t.me/yargazm/">Обсудить проект</a>
+            <a class="cta-button" href="https://t.me/yargazm/" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
 
-            <button class="burger-btn" id="burger-btn" aria-label="Открыть меню">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
             </button>
         </div>
+
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильное меню">
+            <a class="mobile-nav-link" href="#">Обо мне</a>
+            <a class="mobile-nav-link" href="#services">Услуги</a>
+            <a class="mobile-nav-link" href="#">Работа</a>
+            <a class="mobile-nav-link" href="#">Контакты</a>
+            <a class="mobile-nav-link" href="https://t.me/yargazm/" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
+        </nav>
     </header>
 
-    <!-- Mobile menu overlay -->
-    <div class="mobile-menu" id="mobile-menu">
-        <nav class="mobile-nav">
-            <a class="mobile-nav-link" href="#about">Обо мне</a>
-            <a class="mobile-nav-link" href="#services">Услуги</a>
-            <a class="mobile-nav-link" href="#process">Работа</a>
-            <a class="mobile-nav-link" href="#contacts">Контакты</a>
-            <a class="mobile-nav-cta" href="https://t.me/yargazm/">Обсудить проект</a>
-        </nav>
-    </div>
-
     <main>
-        <section class="hero reveal">
-            <h1 class="hero-title">Здесь создают сайты,<br>
-                которым <span class="accent">доверяют</span></h1>
 
-            <p class="hero-description">
-                Я разрабатываю современные и удобные веб-сайты,<br>
-                которые помогают бизнесу расти и достигать своих целей.
-            </p>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Создаю сайты, которые<br>
+                    приносят <span class="gradient-text">клиентов</span></h1>
 
-            <div class="hero-buttons">
-                <a class="hero-button hero-button-1" href="https://t.me/yargazm">Написать мне</a>
-                <a class="hero-button hero-button-2" href="#services">Мои услуги</a>
+                <p class="hero-description">
+                    Работаю с специалистами и бизнесами по всему миру.<br>
+                    Разрабатываю сайты с нуля под ключ.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="hero-button hero-button--primary" href="https://t.me/yargazm" target="_blank" rel="noopener noreferrer">Написать мне</a>
+                    <a class="hero-button hero-button--secondary" href="#services">Мои услуги</a>
+                </div>
             </div>
         </section>
 
-        <section class="advantages reveal" id="advantages">
-            <div class="advantages-image">
-                <img src="images/laptop-in-office.png" alt="Ноутбук в офисе — разработка веб-сайтов">
-            </div>
+        <!-- Advantages -->
+        <section class="advantages">
+            <img class="advantages-image" src="images/table.png" alt="Ноутбук в офисе — разработка веб-сайтов">
 
             <div class="advantages-content">
                 <h2 class="advantages-title">Мои преимущества</h2>
 
-                <div class="advantages-block">
-                    <div class="advantage-item">
-                        <span class="advantage-number">01</span>
-                        <span class="advantage-description">
-                            Все решения принимаются и реализуются одним человеком, 
-                            без испорченного телефона и потерь в понимании задачи.
-                        </span>
-                    </div>
-                    <div class="advantage-item">
-                        <span class="advantage-number">02</span>
-                        <span class="advantage-description">
-                            Сам делаю и дизайн, и разработку, без необходимости отдельно 
-                            привлекать дизайнера и увеличивать бюджет проекта.
-                        </span>
-                    </div>
-                    <div class="advantage-item">
-                        <span class="advantage-number">03</span>
-                        <span class="advantage-description">
-                            Проекты берутся в работу с учётом загрузки, что позволяет 
-                            спокойно соблюдать сроки без спешки и перегрузки.
-                        </span>
-                    </div>
-                    <div class="advantage-item">
-                        <span class="advantage-number">04</span>
-                        <span class="advantage-description">
-                            Проект собирается с чистой и понятной структурой, 
-                            что даёт возможность дальнейшего масштабирования.
-                        </span>
-                    </div>
-                </div>
+                <ul class="advantages-list">
+                    <li class="advantage-item">
+                        <span class="advantage-number gradient-text" aria-hidden="true">01</span>
+                        <p class="advantage-description">Один человек — от брифа до запуска</p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="advantage-number gradient-text" aria-hidden="true">02</span>
+                        <p class="advantage-description">Правки без ожиданий и спринтов</p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="advantage-number gradient-text" aria-hidden="true">03</span>
+                        <p class="advantage-description">Дизайн сразу под реализацию</p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="advantage-number gradient-text" aria-hidden="true">04</span>
+                        <p class="advantage-description">Цена без агентских накруток</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="about reveal" id="about">
+        <!-- About -->
+        <section class="about">
             <div class="about-content">
-                <h2 class="about-title">Пишу не просто сайты,<br>а реально рабочие<br>инструменты</h2>
+                <h2 class="about-title">Пишу не просто сайты,<br>а инструменты для<br>роста бизнеса</h2>
 
                 <p class="about-description">
-                    Я разрабатываю сайты для личных проектов и бизнеса — от простых решений 
-                    для старта до продуманных сайтов с чёткой структурой и логикой.
+                    Я разрабатываю сайты для личных проектов и бизнеса — от<br>простых решений 
+                    для старта до продуманных сайтов с чёткой<br>структурой и логикой.
                 </p>
 
                 <p class="about-description">
-                    Работаю над каждым этапом самостоятельно: от понимания задачи и структуры 
-                    до дизайна и полной вёрстки. Без лишних элементов и перегрузки — только то, 
-                    что действительно нужно. В итоге получается сайт, который выглядит аккуратно 
-                    и даёт результат.
+                    Работаю над каждым этапом самостоятельно: от понимания<br>задачи и структуры 
+                    до дизайна и полной вёрстки. Учитываю<br>все ваши пожелания и вношу правки 
+                    по вашим комментариям.<br>В итоге получается сайт, который работает на вас.
                 </p>
 
-                <div class="about-items">
-                    <div class="about-item">
-                        <p class="about-plus">100%</p>
-                        <p class="about-plus-description">Ответственность</p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <p class="about-stat-value gradient-text">100%</p>
+                        <p class="about-stat-label">Ответственность</p>
                     </div>
-
-                    <div class="about-item">
-                        <p class="about-plus">30 мин</p>
-                        <p class="about-plus-description">Ответ за полчаса</p>
+                    <div class="about-stat">
+                        <p class="about-stat-value gradient-text">30 мин</p>
+                        <p class="about-stat-label">Ответ за полчаса</p>
                     </div>
-
-                    <div class="about-item">
-                        <p class="about-plus">3-10 дней</p>
-                        <p class="about-plus-description">Запуск сайта</p>
+                    <div class="about-stat">
+                        <p class="about-stat-value gradient-text">3-14 дней</p>
+                        <p class="about-stat-label">Запуск сайта</p>
                     </div>
                 </div>
             </div>
 
-            <div class="about-image">
-                <img src="images/office-2.png" alt="Ноутбук в офисе — разработка веб-сайтов">
-            </div>
+            <img class="about-image" src="images/office-2.png" alt="Ноутбук в офисе — разработка веб-сайтов">
         </section>
 
-        <section class="services reveal" id="services">
+        <!-- Services -->
+        <section class="services" id="services">
             <h2 class="services-title">Что я могу разработать</h2>
 
-            <div class="service-blocks">
-                <div class="service-block reveal">
-                    <div class="service-color service-color-1">
+            <div class="services-list">
+
+                <article class="service-card">
+                    <div class="service-icon-wrapper service-icon-wrapper--1">
                         <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000">
-                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                            fill="currentColor">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor">
                                 <path d="M1610 4290 c-200 -11 -302 -41 -436 -129 -176 -115 -286 -282 -330
                                 -502 -15 -74 -17 -196 -21 -994 -3 -617 -1 -958 7 -1058 19 -261 79 -406 225
                                 -552 84 -84 154 -131 255 -172 142 -57 123 -56 1165 -60 1136 -5 1205 -2 1377
@@ -178,21 +162,17 @@
                             </g>
                         </svg>
                     </div>
+                    <h3 class="service-name">Лендинг</h3>
+                    <p class="service-description">
+                        Одностраничный сайт, под конкретное действие — заявка, покупка или запись. 
+                        Подходит для быстрого запуска рекламы и презентации услуги или продукта.
+                    </p>
+                </article>
 
-                    <article class="service-text">
-                        <h3 class="service-name">Лендинг</h3>
-                        <p class="service-description">
-                            Одностраничный сайт, заточенный под конкретное действие — заявка, покупка или запись. 
-                            Подходит для быстрого запуска рекламы и чёткой презентации одной услуги или продукта.
-                        </p>
-                    </article>
-                </div>
-
-                <div class="service-block reveal">
-                    <div class="service-color service-color-2">
+                <article class="service-card">
+                    <div class="service-icon-wrapper service-icon-wrapper--2">
                         <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000">
-                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                            fill="currentColor">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor">
                                 <path d="M2090 4401 c-69 -5 -145 -14 -170 -21 -153 -42 -284 -172 -327 -323
                                 -8 -30 -17 -118 -20 -209 l-6 -156 -301 -4 c-334 -5 -362 -9 -463 -74 -105
                                 -67 -177 -165 -210 -285 -17 -59 -18 -137 -18 -1054 0 -917 1 -995 18 -1054
@@ -210,21 +190,17 @@
                             </g>
                         </svg>
                     </div>
+                    <h3 class="service-name">Сайт-визитка</h3>
+                    <p class="service-description">
+                        Небольшой сайт для презентации вас или вашего бизнеса. Позволяет показать услуги, 
+                        рассказать о себе и дать клиенту всю необходимую информацию для связи.
+                    </p>
+                </article>
 
-                    <article class="service-text">
-                        <h3 class="service-name">Сайт-визитка</h3>
-                        <p class="service-description">
-                            Небольшой сайт для презентации вас или вашего бизнеса. Позволяет показать услуги, 
-                            рассказать о себе и дать клиенту всю необходимую информацию для связи.
-                        </p>
-                    </article>
-                </div>
-
-                <div class="service-block reveal">
-                    <div class="service-color service-color-3">
+                <article class="service-card">
+                    <div class="service-icon-wrapper service-icon-wrapper--3">
                         <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000">
-                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                            fill="currentColor">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor">
                                 <path d="M3689 4437 c-25 -7 -65 -25 -90 -39 -24 -15 -278 -211 -565 -437
                                 l-521 -410 -454 -3 c-433 -4 -457 -5 -527 -26 -224 -68 -416 -229 -521 -439
                                 -96 -191 -106 -464 -26 -668 58 -147 189 -306 325 -396 59 -39 176 -92 228
@@ -242,27 +218,27 @@
                             </g>
                         </svg>
                     </div>
+                    <h3 class="service-name">Промо-сайт</h3>
+                    <p class="service-description">
+                        Сайт под конкретный запуск: продукт, событие или акция. Делается с упором на визуал, 
+                        вовлечение и эффектную подачу, чтобы выделиться и привлечь внимание.
+                    </p>
+                </article>
 
-                    <article class="service-text">
-                        <h3 class="service-name">Промо-сайт</h3>
-                        
-                        <p class="service-description">
-                            Сайт под конкретный запуск: продукт, событие или акция. Делается с упором на визуал, 
-                            вовлечение и эффектную подачу, чтобы выделиться и привлечь внимание.
-                        </p>
-                    </article>
-                </div>
             </div>
         </section>
 
-        <section class="prices reveal" id="prices">
-            <h2 class="prices-title">Что входит в разработку</h2>
+        <!-- Prices -->
+        <section class="prices">
+            <h2 class="prices-title">Наполнение и цены</h2>
+            <p class="prices-subtitle">В разработку каждого сайта входит адаптивная вёрстка, 
+                базовая SEO-настройка,<br>подключение домена и хостинга, а также:</p>
 
-            <div class="price-blocks">
-                <div class="price-block price-edge reveal">
+            <div class="prices-list">
+
+                <div class="price-card">
                     <h3 class="price-title">Лендинг</h3>
                     <p class="price-subtitle">Одна страница, одно действие</p>
-
                     <ul class="price-items">
                         <li class="price-item">Продающая структура блоков</li>
                         <li class="price-item">Сценарий пользовательского пути</li>
@@ -271,15 +247,13 @@
                         <li class="price-item">Захватывающий первый экран</li>
                         <li class="price-item">Интеграция форм заявок</li>
                     </ul>
-
-                    <p class="price"><span class="price-from">от</span> <span class="price-value">$100</span></p>
-                    <a class="price-button" href="https://t.me/yargazm" target="_blank">Заказать</a>
+                    <p class="price-tag"><span class="price-from">от</span> <span class="price-value">$100</span></p>
+                    <a class="price-button" href="https://t.me/yargazm" target="_blank" rel="noopener noreferrer">Заказать</a>
                 </div>
 
-                <div class="price-block price-center reveal">
+                <div class="price-card price-card--featured">
                     <h3 class="price-title">Сайт-визитка</h3>
                     <p class="price-subtitle">Кто вы и как связаться</p>
-
                     <ul class="price-items">
                         <li class="price-item">Страница о компании</li>
                         <li class="price-item">Блок услуг и описаний</li>
@@ -288,198 +262,208 @@
                         <li class="price-item">Блок отзывов клиентов</li>
                         <li class="price-item">Навигация по разделам</li>
                     </ul>
-
-                    <p class="price"><span class="price-from">от</span> <span class="price-value">$150</span></p>
-                    <a class="price-button" href="https://t.me/yargazm" target="_blank">Заказать</a>
+                    <p class="price-tag"><span class="price-from">от</span> <span class="price-value">$150</span></p>
+                    <a class="price-button" href="https://t.me/yargazm" target="_blank" rel="noopener noreferrer">Заказать</a>
                 </div>
 
-                <div class="price-block price-edge reveal">
+                <div class="price-card">
                     <h3 class="price-title">Промо-сайт</h3>
                     <p class="price-subtitle">Яркая подача одного запуска</p>
-
                     <ul class="price-items">
                         <li class="price-item">Концепция рекламной подачи</li>
                         <li class="price-item">Визуальная айдентика проекта</li>
                         <li class="price-item">Анимации и интерактив</li>
                         <li class="price-item">Презентация продукта или события</li>
                         <li class="price-item">Сюжетная подача контента</li>
-                        <li class="price-item">Эмоциональный пользовательский опыт</li>
+                        <li class="price-item">Визуальная концепция с нуля</li>
                     </ul>
-
-                    <p class="price"><span class="price-from">от</span> <span class="price-value">$250</span></p>
-                    <a class="price-button" href="https://t.me/yargazm" target="_blank">Заказать</a>
+                    <p class="price-tag"><span class="price-from">от</span> <span class="price-value">$250</span></p>
+                    <a class="price-button" href="https://t.me/yargazm" target="_blank" rel="noopener noreferrer">Заказать</a>
                 </div>
+
             </div>
         </section>
 
-        <section class="process reveal" id="process">
+        <!-- Process -->
+        <section class="process">
             <h2 class="process-title">Как проходит работа</h2>
 
-            <div class="steps">
-                <div class="step reveal">
-                    <div class="step-num step-num-1">1</div>
-                    <h3 class="step-title">Обсуждение</h3>
-                    <p class="step-description">Уточняю задачу, цели сайта и ожидаемый результат.</p>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-num step-num--1" aria-hidden="true">1</div>
+                    <div class="step-body">
+                        <h3 class="step-title">Обсуждение</h3>
+                        <p class="step-description">Разбираемся в задаче, аудитории и целях. Фиксируем результат в брифе.</p>
+                    </div>
                 </div>
-
-                <div class="step reveal">
-                    <div class="step-num step-num-2">2</div>
-                    <h3 class="step-title">Структура</h3>
-                    <p class="step-description">Продумываю логику и наполнение сайта, согласовываю общий скелет.</p>
+                <div class="step">
+                    <div class="step-num step-num--2" aria-hidden="true">2</div>
+                    <div class="step-body">
+                        <h3 class="step-title">Структура</h3>
+                        <p class="step-description">Прорабатываю логику блоков и пользовательский путь, согласовываю.</p>
+                    </div>
                 </div>
-
-                <div class="step reveal">
-                    <div class="step-num step-num-3">3</div>
-                    <h3 class="step-title">Разработка</h3>
-                    <p class="step-description">Собираю дизайн и верстаю сайт с адаптацией под все устройства.</p>
+                <div class="step">
+                    <div class="step-num step-num--3" aria-hidden="true">3</div>
+                    <div class="step-body">
+                        <h3 class="step-title">Разработка</h3>
+                        <p class="step-description">Собираю дизайн и верстаю сайт с адаптацией под все устройства.</p>
+                    </div>
                 </div>
-
-                <div class="step reveal">
-                    <div class="step-num step-num-4">4</div>
-                    <h3 class="step-title">Запуск</h3>
-                    <p class="step-description">Публикую сайт и передаю готовый результат с возможностью дальнейшей поддержки.</p>
+                <div class="step">
+                    <div class="step-num step-num--4" aria-hidden="true">4</div>
+                    <div class="step-body">
+                        <h3 class="step-title">Запуск</h3>
+                        <p class="step-description">Публикую сайт, проверяю всё перед сдачей и передаю с поддержкой.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq reveal" id="faq">
+        <!-- FAQ -->
+        <section class="faq">
             <h2 class="faq-title">Частые вопросы</h2>
 
-            <div class="faq-blocks">
-                <div class="faq-block">
-                    <span class="faq-num">01</span>
-                    <div class="faq-item">
-                        <div class="faq-header">
-                            <p class="faq-question">Сколько стоит сайт?</p>
-                            <button class="faq-toggle"></button>
-                        </div>
+            <div class="faq-list">
 
-                        <div class="faq-answer-wrapper">
-                            <p class="faq-answer">
-                                Стоимость зависит от объёма и сложности проекта. Минимальная цена — от $100 за лендинг, 
-                                от $150 за сайт-визитку и от $250 за промо-сайт. Точную стоимость могу назвать после обсуждения задачи.
-                            </p>
-                        </div>                   
+                <div class="faq-entry">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span class="faq-num" aria-hidden="true">01</span>
+                        <span class="faq-item">
+                            <span class="faq-question">Как происходит оплата?</span>
+                            <span class="faq-toggle" aria-hidden="true"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-1">
+                        <p class="faq-answer">
+                            Работаю по схеме 50/50 — половина до начала работы, половина после сдачи.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-block">
-                    <span class="faq-num">02</span>
-                    <div class="faq-item">
-                        <div class="faq-header">
-                            <p class="faq-question">Сколько времени занимает разработка?</p>
-                            <button class="faq-toggle"></button>
-                        </div>
-                        <div class="faq-answer-wrapper">
-                            <p class="faq-answer">
-                                Обычно от 3 до 10 дней, в зависимости от объёма и сложности. Сроки обсуждаются индивидуально для каждого проекта.
-                            </p>
-                        </div>                  
-                    </div>
-                </div>
-                <div class="faq-block">
-                    <span class="faq-num">03</span>
-                    <div class="faq-item">
-                        <div class="faq-header">
-                            <p class="faq-question">Какие технологии используете?</p>
-                            <button class="faq-toggle"></button>
-                        </div>
 
-                        <div class="faq-answer-wrapper">
-                            <p class="faq-answer">
-                                Я использую HTML, CSS и JavaScript для создания современных и адаптивных сайтов. В некоторых случаях могу применить фреймворки или CMS, если это соответствует задачам проекта.
-                            </p>
-                        </div>
+                <div class="faq-entry">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span class="faq-num" aria-hidden="true">02</span>
+                        <span class="faq-item">
+                            <span class="faq-question">Что если мне не понравится результат?</span>
+                            <span class="faq-toggle" aria-hidden="true"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-2">
+                        <p class="faq-answer">
+                            Правки вносятся до тех пор, пока результат вас не устроит. 
+                            Второй платёж — только после вашего утверждения.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-block">
-                    <span class="faq-num">04</span>
-                    <div class="faq-item">
-                        <div class="faq-header">
-                            <p class="faq-question">Предоставляете ли поддержку после запуска?</p>
-                            <button class="faq-toggle"></button>
-                        </div>
 
-                        <div class="faq-answer-wrapper">
-                            <p class="faq-answer">
-                                Да, я могу предоставить поддержку и помощь с обновлениями или изменениями на сайте после его запуска. Условия поддержки обсуждаются индивидуально.
-                            </p>
-                        </div>
+                <div class="faq-entry">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span class="faq-num" aria-hidden="true">03</span>
+                        <span class="faq-item">
+                            <span class="faq-question">Нужно ли мне разбираться в технической части?</span>
+                            <span class="faq-toggle" aria-hidden="true"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-3">
+                        <p class="faq-answer">
+                            Нет. Вы объясняете задачу и пожелания, я перевожу это в готовый сайт. 
+                            Никаких технических знаний с вашей стороны не требуется.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-block">
-                    <span class="faq-num">05</span>
-                    <div class="faq-item">
-                        <div class="faq-header">
-                            <p class="faq-question">Есть ли гарантия на работу?</p>
-                            <button class="faq-toggle"></button>
-                        </div>       
-                        
-                        <div class="faq-answer-wrapper">
-                            <p class="faq-answer">
-                                Да, я предоставляю гарантию на все выполненные работы. Подробности согласовываются индивидуально.
-                            </p>
-                        </div>                  
+
+                <div class="faq-entry">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span class="faq-num" aria-hidden="true">04</span>
+                        <span class="faq-item">
+                            <span class="faq-question">Можно ли в будущем расширить сайт?</span>
+                            <span class="faq-toggle" aria-hidden="true"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-4">
+                        <p class="faq-answer">
+                            Да, сайт изначально строится с учётом возможного роста — 
+                            добавить новые страницы или разделы можно в любой момент.
+                        </p>
                     </div>
                 </div>
+
+                <div class="faq-entry">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span class="faq-num" aria-hidden="true">05</span>
+                        <span class="faq-item">
+                            <span class="faq-question">Что будет после запуска?</span>
+                            <span class="faq-toggle" aria-hidden="true"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-5">
+                        <p class="faq-answer">
+                            Передаю все доступы и при необходимости остаюсь на связи. 
+                            Поддержка и доработки обсуждаются индивидуально.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="contacts reveal" id="contacts">
+        <!-- Contacts -->
+        <section class="contacts">
             <div class="contacts-cta-box">
                 <h2 class="contacts-title">Бесплатная консультация</h2>
-
                 <p class="contacts-description">
                     Расскажите о бизнесе — подберём подходящий пакет и<br>рассчитаем бюджет
                 </p>
-
-                <a class="contacts-button" href="https://t.me/yargazm">Написать в Telegram</a>
-            </div>        
+                <a class="contacts-button" href="https://t.me/yargazm" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+            </div>
         </section>
+
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
-            
-            <div class="footer__column">
-                <h3 class="footer__title">О сайте</h3>
-                <p class="footer__text">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3 class="footer-title">О сайте</h3>
+                <p class="footer-text">
                     Краткое описание проекта или компании. Здесь можно указать, чем вы занимаетесь и какую пользу даёте пользователям.
                 </p>
             </div>
 
-            <div class="footer__column">
-                <h3 class="footer__title">Навигация</h3>
-                <ul class="footer__list">
+            <div class="footer-column">
+                <h3 class="footer-title">Навигация</h3>
+                <ul class="footer-list">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#process">Работа</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
 
-            <div class="footer__column">
-                <h3 class="footer__title">Контакты</h3>
-                <ul class="footer__list">
-                    <li>Email: <a href="mailto:hello@yargazm.com">hello@yargazm.com</a></li>
-                    <li>Телефон: +7 (XXX) XXX-XX-XX</li>
-                    <li>Город: Алматы</li>
+            <div class="footer-column">
+                <h3 class="footer-title">Контакты</h3>
+                <ul class="footer-list">
+                    <li><a href="mailto:example@mail.com">example@mail.com</a></li>
+                    <li><a href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a></li>
+                    <li>Алматы</li>
                 </ul>
             </div>
 
-            <div class="footer__column">
-                <h3 class="footer__title">Соцсети</h3>
-                <div class="footer__socials">
-                    <a href="https://t.me/yargazm">Telegram</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
+            <div class="footer-column">
+                <h3 class="footer-title">Соцсети</h3>
+                <div class="footer-socials">
+                    <a href="https://t.me/yargazm" target="_blank" rel="noopener noreferrer">Telegram</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
                 </div>
             </div>
 
         </div>
 
-        <div class="footer__bottom">
-            <p>© 2026 yargazm.com. Все права защищены.</p>
+        <div class="footer-bottom">
+            <span>© 2026 Ваш сайт. Все права защищены.</span>
             <a href="#">Политика конфиденциальности</a>
         </div>
     </footer>
